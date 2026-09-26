@@ -1,4 +1,4 @@
-package com.example.jaagai_app
+package online.jaagai
 
 import io.flutter.embedding.android.FlutterActivity
 

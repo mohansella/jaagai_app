@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "jaagai_app" "\0"
+            VALUE "CompanyName", "Jaagai Online" "\0"
+            VALUE "FileDescription", "Jaagai Online Matrimony" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "jaagai_app" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "jaagai_app.exe" "\0"
-            VALUE "ProductName", "jaagai_app" "\0"
+            VALUE "InternalName", "Jaagai Online" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 Jaagai Online. All rights reserved." "\0"
+            VALUE "OriginalFilename", "jaagai.exe" "\0"
+            VALUE "ProductName", "Jaagai Online" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

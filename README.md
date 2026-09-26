@@ -1,17 +1,13 @@
-# jaagai_app
+# Jaagai Online
 
-A new Flutter project.
+Jaagai Online is a matrimony app for the Kongu Gounder community. Browse marriage profiles, manage your profile, and connect through [jaagai.online](https://jaagai.online).
 
-## Getting Started
+## App identity
 
-This project is a starting point for a Flutter application.
+- Store name: Jaagai Online
+- App ID: `online.jaagai`
+- Store summary: Find marriage profiles in the Kongu Gounder community with Jaagai Online.
+- Store description: Jaagai Online is a community-focused matrimony platform for the Kongu Gounder community. Create a marriage profile, browse prospective matches, and connect through the Jaagai Online platform.
+- Website: [jaagai.online](https://jaagai.online)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app ID is part of the published app's permanent store identity. Confirm it matches the intended Play Store and App Store listings before the first release.

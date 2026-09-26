@@ -65,6 +65,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Jaagai Online',
       debugShowCheckedModeBanner: false,
       home: Scaffold(body: WebViewWidget(controller: controller)),
     );
