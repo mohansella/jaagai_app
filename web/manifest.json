@@ -1,11 +1,11 @@
 {
-    "name": "jaagai_app",
-    "short_name": "jaagai_app",
+    "name": "Jaagai Online",
+    "short_name": "Jaagai",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#35132F",
+    "theme_color": "#5B1848",
+    "description": "Find marriage profiles in the Kongu Gounder community with Jaagai Online.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
