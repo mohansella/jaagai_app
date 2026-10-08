@@ -20,10 +20,8 @@ class _MyAppState extends State<MyApp> {
     "https://jaagai.online/login.php",
     "https://jaagai.online/register.php",
     "https://jaagai.online/matrimony-search.php",
-    //"https://jaagai.online/contact-us.php",
     "https://jaagai.online/logout.php",
     "https://jaagai.online/profile.php",
-    "https://jaagai.online/uploads",
   };
 
   @override
@@ -67,7 +65,14 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Jaagai Online',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: WebViewWidget(controller: controller)),
+      home: Scaffold(
+        body: SafeArea(
+          right: false,
+          bottom: false,
+          left: false,
+          child: WebViewWidget(controller: controller),
+        ),
+      ),
     );
   }
 }
