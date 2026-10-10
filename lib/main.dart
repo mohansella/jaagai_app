@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -16,12 +17,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   late final WebViewController controller;
 
+  static const jaagaiDomain = kReleaseMode
+      ? "https://jaagai.online"
+      : "http://localhost:8080";
+
   final allowedUrls = {
-    "https://jaagai.online/login.php",
-    "https://jaagai.online/register.php",
-    "https://jaagai.online/matrimony-search.php",
-    "https://jaagai.online/logout.php",
-    "https://jaagai.online/profile.php",
+    "$jaagaiDomain/new/login.php",
+    "$jaagaiDomain/new/register.php",
+    "$jaagaiDomain/new/matrimony-search.php",
+    "$jaagaiDomain/new/logout.php",
+    "$jaagaiDomain/new/profile.php",
   };
 
   @override
@@ -57,7 +62,7 @@ class _MyAppState extends State<MyApp> {
           },
         ),
       )
-      ..loadRequest(Uri.parse('https://jaagai.online/login.php'));
+      ..loadRequest(Uri.parse('$jaagaiDomain/new/login.php'));
   }
 
   @override
@@ -65,14 +70,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Jaagai Online',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SafeArea(
-          right: false,
-          bottom: false,
-          left: false,
-          child: WebViewWidget(controller: controller),
-        ),
-      ),
+      home: Scaffold(body: WebViewWidget(controller: controller)),
     );
   }
 }
