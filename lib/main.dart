@@ -70,7 +70,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Jaagai Online',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: WebViewWidget(controller: controller)),
+      home: Scaffold(
+        body: SafeArea(child: WebViewWidget(controller: controller)),
+      ),
     );
   }
 }
